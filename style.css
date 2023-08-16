@@ -1,0 +1,236 @@
+*{
+
+	padding: 0;
+	margin: 0;
+	background-color: #ecf0f3;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	outline: none;
+}
+.container
+{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.calculator
+{
+	background-color: black;
+	padding: 15px;
+	border-radius: 30px;
+
+	display: grid;
+	grid-template-columns: repeat(4, 68px);
+}
+input{
+
+
+
+	grid-column: span 4;
+	height: 70px;
+	width: 260px;
+	background-color: white;
+	border: none;
+	border-radius: 30px;
+	font-size: 50px;
+	text-align: end;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+button
+{
+	height: 48px;
+	width: 48px;
+	background-color: #FFF200 ;
+	border:none;
+	border-radius: 50%;
+	margin: 8px;
+	font-size: 16px;
+
+}
+
+.equal
+{
+	height: 48px;
+	width: 48px;
+	background-color: #FFF200 ;
+	border:none;
+	border-radius: 50%;
+	margin: 8px;
+	font-size: 16px; 
+}
+
+#cl{
+	color: black;
+	background-color: red ;
+	font-weight: bold;
+}
+
+#del
+{
+	color: black;
+	background-color: red ;
+	font-weight: bold;
+}
+
+#add
+{
+	color: black;
+	background-color: #FFF200 ;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#min
+{
+	color: black;
+	background-color: #FFF200 ;
+	font-weight: bold;
+	font-size: 20px;
+}
+#div
+{
+	color: black;
+	background-color: #FFF200 ;
+	font-weight: bold;
+	font-size: 20px;
+}
+#mod
+{
+	color: black;
+	background-color: #FFF200 ;
+	font-weight: bold;
+	font-size: 20px;
+}
+#eq
+{
+	color: white;
+	background-color: orange;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#mul
+{
+	color: black;
+	background-color: #FFF200 ;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+#decimal{
+    color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#doublezero{
+    color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+
+
+
+#zero{
+    color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#one
+{
+	color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+
+#two
+{
+	
+	color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#three
+{
+	
+	color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#four
+{
+	
+	color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#five
+{
+	
+	color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#six
+{
+	color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#seven
+{
+	color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#eight
+{
+	
+color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#nine
+{
+	
+	color: black;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+
+
+
+
+

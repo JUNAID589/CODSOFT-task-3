@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Custom Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="calculator">
+
+   <input type="text" placeholder="0" id="output-screen">
+
+   <button onclick="clearInput()" id="cl">AC</button>
+
+   <button onclick="deleteLast()" id="del">DEL</button>
+
+   <button onclick="displayValue('%')" id="mod">%</button>
+
+   <button onclick="displayValue('/')" id="div">/</button>
+
+   <button onclick="displayValue('7')" id="seven">7</button>
+
+   <button onclick="displayValue('8')" id="eight">8</button>
+
+   <button onclick="displayValue('9')" id="nine">9</button>
+
+   <button onclick="displayValue('*')" id="mul">*</button>
+
+   <button onclick="displayValue('4')" id="four">4</button>
+
+   <button onclick="displayValue('5')" id="five">5</button>
+
+   <button onclick="displayValue('6')" id="six">6</button>
+
+   <button onclick="displayValue('-')" id="min">-</button>
+
+   <button onclick="displayValue('1')" id="one">1</button>
+
+   <button onclick="displayValue('2')" id="two">2</button>
+
+   <button onclick="displayValue('3')" id="three">3</button>
+
+   <button onclick="displayValue('+')" id="add">+</button>
+
+   <button onclick="displayValue('0')" id="zero">0</button>
+
+   <button onclick="displayValue('00')" id="doublezero">00</button>
+
+   <button onclick="displayValue('.')" id="decimal">.</button>
+
+   <button onclick="performCalculation()" id="eq" class="equal">=</button>
+
+</div>
+   
+</div>
+
+<script>
+  
+let outputDisplay = document.getElementById("output-screen");
+
+function displayValue(number) 
+{
+  outputDisplay.value += number;
+}
+
+function performCalculation() 
+{
+  try 
+  {
+    outputDisplay.value = eval(outputDisplay.value);
+  } catch (error) {
+    alert("Invalid input");
+  }
+}
+
+function clearInput()
+{
+  outputDisplay.value = "";
+}
+
+function deleteLast() 
+{
+  outputDisplay.value = outputDisplay.value.slice(0, -1);
+}
+
+</script>
+
+</body>
+
+</html>
